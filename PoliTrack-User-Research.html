@@ -159,7 +159,7 @@ button, input { font-family: var(--fb); }
    ================================================ */
 .content {
   margin-left: var(--sw); margin-top: var(--hh);
-  padding: 60px 64px 120px; max-width: calc(var(--sw) + 840px);
+  padding: 72px 72px 140px; max-width: calc(var(--sw) + 900px);
 }
 .pane { display: none; }
 .pane.active { display: block; animation: fadeUp .18s ease; }
@@ -171,32 +171,32 @@ button, input { font-family: var(--fb); }
 .eyebrow {
   font-family: var(--fh); font-size: 9px; font-weight: 800;
   letter-spacing: .2em; text-transform: uppercase; color: var(--cyan);
-  margin-bottom: 14px; display: block;
+  margin-bottom: 16px; display: block;
 }
 .section-title {
-  font-family: var(--fh); font-size: 30px; font-weight: 800;
-  letter-spacing: .04em; text-transform: uppercase; line-height: 1.06;
-  color: var(--text); margin-bottom: 20px;
+  font-family: var(--fh); font-size: 36px; font-weight: 800;
+  letter-spacing: .03em; text-transform: uppercase; line-height: 1.04;
+  color: var(--text); margin-bottom: 22px;
 }
 .section-title em { color: var(--cyan); font-style: normal; }
-.section-desc { font-size: 15px; color: var(--text-mid); line-height: 1.8; max-width: 580px; margin-bottom: 48px; }
+.section-desc { font-size: 15.5px; color: var(--text-mid); line-height: 1.9; max-width: 560px; margin-bottom: 60px; }
 .block-title {
   font-family: var(--fh); font-size: 10px; font-weight: 800;
-  letter-spacing: .14em; text-transform: uppercase; color: var(--text); margin-bottom: 20px;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--text); margin-bottom: 24px; margin-top: 8px;
 }
 
 /* ================================================
    RULES
    ================================================ */
-.rule { height: 1px; background: var(--line); margin: 44px 0; }
-.rule-sm { height: 1px; background: var(--line); margin: 28px 0; }
+.rule { height: 1px; background: var(--line); margin: 64px 0; }
+.rule-sm { height: 1px; background: var(--line); margin: 40px 0; }
 
 /* ================================================
    FINDING ROW
    ================================================ */
-.finding { border-top: 1px solid var(--line); padding: 24px 0; }
+.finding { border-top: 1px solid var(--line); padding: 34px 0; position: relative; }
 .finding:last-child { border-bottom: 1px solid var(--line); }
-.finding-hd { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 10px; }
+.finding-hd { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 14px; }
 .sev {
   font-family: var(--fh); font-size: 8px; font-weight: 800;
   letter-spacing: .14em; text-transform: uppercase;
@@ -207,21 +207,21 @@ button, input { font-family: var(--fb); }
 .sev.g { color: var(--green); border-color: var(--green); }
 .sev.t { color: var(--teal); border-color: var(--teal); }
 .sev.c { color: var(--cyan); border-color: var(--cyan); }
-.finding-title { font-size: 16px; font-weight: 600; color: var(--text); line-height: 1.35; flex: 1; }
-.finding-body { font-size: 14px; color: var(--text-mid); line-height: 1.78; max-width: 660px; margin-bottom: 12px; }
-.finding-action { font-size: 11px; font-weight: 600; color: var(--teal); letter-spacing: .02em; }
+.finding-title { font-size: 17px; font-weight: 600; color: var(--text); line-height: 1.32; flex: 1; }
+.finding-body { font-size: 14.5px; color: var(--text-mid); line-height: 1.88; max-width: 640px; margin-bottom: 16px; }
+.finding-action { font-size: 11.5px; font-weight: 600; color: var(--teal); letter-spacing: .02em; margin-top: 4px; }
 
 /* ================================================
    QUOTE
    ================================================ */
 .q {
-  border-left: 2px solid rgba(35,218,255,.3); padding: 8px 16px;
-  margin: 12px 0 6px; font-size: 12.5px; font-style: italic;
-  color: rgba(35,218,255,.8); line-height: 1.65;
+  border-left: 3px solid rgba(35,218,255,.35); padding: 14px 20px;
+  margin: 20px 0 10px; font-size: 13.5px; font-style: italic;
+  color: var(--text-mid); line-height: 1.78; background: rgba(35,218,255,.04);
 }
 .q-who {
   font-size: 10px; font-weight: 700; font-style: normal; color: var(--teal);
-  margin-top: 4px; letter-spacing: .06em; text-transform: uppercase; display: block;
+  margin-top: 6px; letter-spacing: .06em; text-transform: uppercase; display: block;
 }
 
 /* ================================================
@@ -239,20 +239,57 @@ button, input { font-family: var(--fb); }
    ================================================ */
 .stat-row { display: flex; gap: 48px; margin-bottom: 48px; flex-wrap: wrap; }
 .stat { display: flex; flex-direction: column; gap: 4px; }
-.stat-n { font-family: var(--fh); font-size: 42px; font-weight: 800; color: var(--cyan); line-height: 1; letter-spacing: .04em; }
-.stat-l { font-size: 11px; color: var(--text-low); text-transform: uppercase; letter-spacing: .08em; font-weight: 500; }
+.stat-n { font-family: var(--fh); font-size: 48px; font-weight: 800; color: var(--cyan); line-height: 1; letter-spacing: .02em; }
+.stat-l { font-size: 11px; color: var(--text-low); text-transform: uppercase; letter-spacing: .08em; font-weight: 500; margin-top: 6px; }
+
+/* ================================================
+   OVERVIEW AREA (organized by feature/page)
+   ================================================ */
+.ov-area {
+  border-top: 1px solid var(--line);
+  padding: 36px 0 40px;
+}
+.ov-area:last-of-type { border-bottom: 1px solid var(--line); }
+.ov-area-hd {
+  display: flex; align-items: center; gap: 16px; margin-bottom: 22px;
+}
+.ov-area-num {
+  font-family: var(--fh); font-size: 9px; font-weight: 800;
+  letter-spacing: .18em; color: var(--cyan); flex-shrink: 0;
+}
+.ov-area-title {
+  font-size: 18px; font-weight: 700; color: var(--text); flex: 1; letter-spacing: -.01em;
+}
+.ov-area-body {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  border: 1px solid var(--line-f); margin-bottom: 14px;
+}
+.ov-col {
+  padding: 24px 28px;
+  border-right: 1px solid var(--line-f);
+}
+.ov-col:last-child { border-right: none; }
+.ov-col-label {
+  font-family: var(--fh); font-size: 8px; font-weight: 800;
+  letter-spacing: .15em; text-transform: uppercase;
+  color: var(--teal); margin-bottom: 9px;
+}
+.ov-col-text {
+  font-size: 13.5px; color: var(--text-mid); line-height: 1.82;
+}
+.ov-area-sources { display: flex; flex-wrap: wrap; gap: 5px; }
 
 /* ================================================
    FREQ TABLE
    ================================================ */
 .freq-row {
   display: flex; align-items: center; gap: 16px;
-  padding: 11px 0; border-bottom: 1px solid var(--line-f);
+  padding: 13px 0; border-bottom: 1px solid var(--line-f);
 }
 .freq-row:first-child { border-top: 1px solid var(--line-f); }
-.freq-label { font-size: 13px; color: var(--text); flex: 1; }
-.freq-bar-wrap { width: 100px; height: 2px; background: rgba(255,255,255,.1); flex-shrink: 0; }
-.freq-bar { height: 100%; background: var(--cyan); }
+.freq-label { font-size: 13.5px; color: var(--text); flex: 1; line-height: 1.4; }
+.freq-bar-wrap { width: 120px; height: 3px; background: rgba(255,255,255,.1); flex-shrink: 0; border-radius: 2px; }
+.freq-bar { height: 100%; background: var(--cyan); border-radius: 2px; }
 .freq-n { font-size: 11px; font-weight: 700; color: var(--text-low); min-width: 28px; text-align: right; }
 
 /* ================================================
@@ -263,7 +300,7 @@ button, input { font-family: var(--fb); }
   border-top: 1px solid var(--line); border-left: 1px solid var(--line); margin-bottom: 28px;
 }
 .gcell {
-  padding: 24px 28px;
+  padding: 28px 32px;
   border-right: 1px solid var(--line); border-bottom: 1px solid var(--line);
 }
 .gcell-label {
@@ -271,13 +308,13 @@ button, input { font-family: var(--fb); }
   text-transform: uppercase; color: var(--cyan); margin-bottom: 10px;
 }
 .gcell-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.35; }
-.gcell-body { font-size: 12.5px; color: var(--text-mid); line-height: 1.7; }
+.gcell-body { font-size: 13.5px; color: var(--text-mid); line-height: 1.78; }
 
 /* ================================================
    TRAIT TABLE
    ================================================ */
 .ttable { width: 100%; border-collapse: collapse; }
-.ttable td { padding: 7px 0; border-bottom: 1px solid var(--line-f); vertical-align: top; font-size: 12.5px; }
+.ttable td { padding: 11px 0; border-bottom: 1px solid var(--line-f); vertical-align: top; font-size: 13.5px; }
 .ttable td:first-child {
   font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
   color: var(--teal); padding-right: 24px; white-space: nowrap; width: 1%;
@@ -291,20 +328,20 @@ button, input { font-family: var(--fb); }
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
   border-top: 1px solid var(--line); border-left: 1px solid var(--line); margin-bottom: 44px;
 }
-.persona-cell { padding: 28px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.persona-cell { padding: 32px 28px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .persona-num { font-family: var(--fh); font-size: 9px; font-weight: 800; letter-spacing: .16em; color: var(--cyan); margin-bottom: 12px; display: block; }
 .persona-name { font-family: var(--fh); font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--text); margin-bottom: 4px; line-height: 1.3; }
 .persona-tag { font-size: 11px; color: var(--text-low); margin-bottom: 12px; }
-.persona-desc { font-size: 12.5px; color: var(--text-mid); line-height: 1.7; }
+.persona-desc { font-size: 13.5px; color: var(--text-mid); line-height: 1.76; }
 .persona-cell.dim { opacity: .35; }
 
 /* ================================================
    SESSION TAB SYSTEM (within session detail)
    ================================================ */
-.stabs { display: flex; border-bottom: 1px solid var(--line); margin-bottom: 36px; gap: 0; }
+.stabs { display: flex; border-bottom: 1px solid var(--line); margin-bottom: 44px; gap: 0; }
 .stab {
   font-family: var(--fh); font-size: 9px; font-weight: 800; letter-spacing: .14em;
-  text-transform: uppercase; color: var(--text-low); padding: 12px 20px;
+  text-transform: uppercase; color: var(--text-low); padding: 14px 22px;
   cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px;
   transition: color .12s; user-select: none;
 }
@@ -318,15 +355,17 @@ button, input { font-family: var(--fb); }
    ================================================ */
 .s-row {
   display: flex; gap: 24px; align-items: flex-start;
-  padding: 22px 0; border-bottom: 1px solid var(--line); cursor: pointer;
+  padding: 26px 0; border-bottom: 1px solid var(--line); cursor: pointer;
+  transition: padding-left .15s ease;
 }
 .s-row:first-child { border-top: 1px solid var(--line); }
+.s-row:hover { padding-left: 10px; }
 .s-row:hover .s-row-title { color: var(--cyan); }
 .s-row:hover .s-row-arrow { color: var(--cyan); }
 .s-num { font-family: var(--fh); font-size: 11px; font-weight: 800; color: var(--cyan); letter-spacing: .12em; width: 32px; flex-shrink: 0; padding-top: 1px; }
 .s-info { flex: 1; }
-.s-row-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; transition: color .12s; }
-.s-row-meta { font-size: 12px; color: var(--text-low); margin-bottom: 10px; }
+.s-row-title { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 5px; transition: color .12s; }
+.s-row-meta { font-size: 12.5px; color: var(--text-low); margin-bottom: 12px; }
 .s-tags { display: flex; flex-wrap: wrap; gap: 5px; }
 .stag {
   font-size: 9px; font-weight: 700; letter-spacing: .07em;
@@ -354,7 +393,7 @@ button, input { font-family: var(--fb); }
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0; margin-top: 2px;
 }
-.ft { font-size: 13px; color: var(--text-mid); line-height: 1.55; padding: 2px 0; }
+.ft { font-size: 13.5px; color: var(--text-mid); line-height: 1.6; padding: 3px 0; }
 
 /* ================================================
    WORD TAGS (inline)
@@ -377,7 +416,7 @@ button, input { font-family: var(--fb); }
   font-family: var(--fh); font-size: 9px; font-weight: 800;
   letter-spacing: .16em; text-transform: uppercase; color: var(--amber); margin-bottom: 7px;
 }
-.notice-body { font-size: 13px; color: var(--text-mid); line-height: 1.7; }
+.notice-body { font-size: 13.5px; color: var(--text-mid); line-height: 1.76; }
 
 /* ================================================
    BACK BUTTON
@@ -386,7 +425,7 @@ button, input { font-family: var(--fb); }
   display: inline-flex; align-items: center; gap: 8px;
   font-size: 11px; font-weight: 600; color: var(--text-low);
   background: none; border: 1px solid var(--line);
-  padding: 5px 12px; margin-bottom: 36px;
+  padding: 6px 14px; margin-bottom: 40px;
   text-transform: uppercase; letter-spacing: .08em; cursor: pointer;
   transition: color .12s, border-color .12s;
 }
@@ -427,11 +466,13 @@ button, input { font-family: var(--fb); }
   .sidebar { display: none; }
   .hdr-logo { width: auto; border-right: none; }
   .hdr-kpis { display: none; }
-  .content, .footer { margin-left: 0; padding-left: 20px; padding-right: 20px; }
-  .persona-block, .g2, .prof-grid { grid-template-columns: 1fr; }
-  .section-title { font-size: 22px; }
+  .content, .footer { margin-left: 0; padding-left: 24px; padding-right: 24px; }
+  .persona-block, .g2, .prof-grid, .ov-area-body, .stat-compare { grid-template-columns: 1fr; }
+  .section-title { font-size: 26px; }
   .stat-row { gap: 24px; }
   .stabs { overflow-x: auto; }
+  .q-feature-text { font-size: 16px; }
+  .stat-n { font-size: 38px; }
 }
 </style>
 </head>
@@ -494,61 +535,219 @@ button, input { font-family: var(--fb); }
      ============================================================ -->
 <section class="pane active" id="pane-overview">
   <span class="eyebrow">Investigação · 2026</span>
-  <h1 class="section-title">Descobertas da<br><em>investigação</em></h1>
+  <h1 class="section-title">Visão geral<br><em>da investigação</em></h1>
 
   <div class="stat-row">
-    <div class="stat"><span class="stat-n">6</span><span class="stat-l">Testes presenciais completos</span></div>
-    <div class="stat"><span class="stat-n">62</span><span class="stat-l">Respostas online</span></div>
-    <div class="stat"><span class="stat-n">4</span><span class="stat-l">Arquétipos identificados</span></div>
-    <div class="stat"><span class="stat-n">12</span><span class="stat-l">Problemas de usabilidade</span></div>
+    <div class="stat"><span class="stat-n">6</span><span class="stat-l">Testes presenciais</span></div>
+    <div class="stat"><span class="stat-n">64</span><span class="stat-l">Respostas online</span></div>
+    <div class="stat"><span class="stat-n">4</span><span class="stat-l">Arquétipos</span></div>
+    <div class="stat"><span class="stat-n">8</span><span class="stat-l">Áreas analisadas</span></div>
   </div>
 
-  <p class="section-desc">Síntese de seis testes presenciais e 62 respostas ao inquérito online, recolhidos entre março e abril de 2026. O conteúdo está organizado por padrões e prioridades de ação, e não por participante.</p>
+  <p class="section-desc">Seis sessões presenciais e 64 respostas ao inquérito online, recolhidas entre março e abril de 2026. A análise está organizada por área da app, não por participante. Cada área agrega os problemas, o que funciona e os pedidos de feature que lhe correspondem diretamente.</p>
 
   <div class="rule rule-sm"></div>
-  <span class="eyebrow">Padrões transversais</span>
-  <div class="block-title">Os três problemas que mais se repetem</div>
+  <span class="eyebrow">Organização por área da app</span>
+  <div class="block-title">Uma leitura rápida de cada parte da app: o que está a bloquear, o que já funciona, o que se pede a seguir</div>
 
-  <div class="finding">
-    <div class="finding-hd"><span class="sev r">Crítico</span><span class="finding-title">A pesquisa não funciona com a linguagem do dia a dia</span></div>
-    <p class="finding-body">Todos os participantes presenciais pesquisaram por temas mediáticos e esperavam encontrar resultados compatíveis com essa linguagem. O problema é estrutural: a app indexa os títulos formais das propostas parlamentares, que não coincidem com a forma como as pessoas se informam pelos jornais e pelas redes sociais. Ninguém pesquisa "Proposta de Lei n.º 437/XV/1.ª". Pesquisam "propinas", "lei trans" ou "habitação". O inquérito confirma o mesmo padrão nas 62 respostas. O bug adicional, em que "propina" no singular não devolve resultados e "propinas" no plural devolve, é um sintoma do mesmo problema de indexação, não um problema separado.</p>
-    <div class="pills"><span class="pill">Participante 01</span><span class="pill">Participante 02</span><span class="pill">Todos os presenciais</span><span class="pill">Confirmado no inquérito</span></div>
-    <div class="finding-action">→ Indexação por tema, linguagem natural, sinónimos jornalísticos e correção de singular/plural</div>
+  <!-- ÁREA 1: PESQUISA -->
+  <div class="ov-area">
+    <div class="ov-area-hd">
+      <span class="ov-area-num">01</span>
+      <div class="ov-area-title">Pesquisa</div>
+      <span class="sev r">Crítico</span>
+    </div>
+    <div class="ov-area-body">
+      <div class="ov-col">
+        <div class="ov-col-label">Problema central</div>
+        <p class="ov-col-text">A pesquisa filtra por títulos formais de propostas parlamentares. As pessoas pesquisam por palavras que usam no dia a dia: "propinas", "lei trans", "habitação". A maioria dos testes presenciais ficou parada aqui. Bug confirmado: "propina" (singular) não devolve resultados, "propinas" (plural) devolve. Adicionalmente, a lupa desaparece quando se entra dentro de certas secções — um respondente do inquérito mencionou explicitamente que "o botão de pesquisa desaparece depois de filtrar".</p>
+      </div>
+      <div class="ov-col">
+        <div class="ov-col-label">O que funciona</div>
+        <p class="ov-col-text">Quando a pessoa sabe o vocabulário parlamentar ou o nome exacto da proposta, a pesquisa funciona e é rápida. O Participante 05 reformulou conscientemente "trans" para "mudança de nome" e encontrou o resultado correto. O caminho existe; o problema é que exige conhecimento prévio.</p>
+        <div class="ov-col-label" style="margin-top:14px">Pedido de feature</div>
+        <p class="ov-col-text">Indexação por sinónimos, temas e linguagem jornalística. Pesquisa dentro de cada partido. Normalização singular/plural. Barra de pesquisa acessível em todos os ecrãs.</p>
+      </div>
+    </div>
+    <div class="ov-area-sources"><span class="pill">Todos os presenciais</span><span class="pill">Confirmado em 64 respostas</span><span class="pill">Bug singular/plural</span></div>
   </div>
 
-  <div class="finding">
-    <div class="finding-hd"><span class="sev r">Crítico</span><span class="finding-title">A iconografia da navegação não corresponde ao que as pessoas esperam</span></div>
-    <p class="finding-body">Ícones que têm um significado claro para a equipa foram sistematicamente interpretados de outra forma pelos utilizadores. O ícone de home foi lido como Assembleia da República. A lupa desaparece dentro de certas secções. As três barras horizontais, associadas a hamburguer menu em todo o lado, foram interpretadas como definições de perfil ou de conta, não como filtro. Quando dois ou mais utilizadores independentes chegam exatamente à mesma interpretação errada, é um problema de design, não de literacia.</p>
-    <div class="pills"><span class="pill">Participante 01</span><span class="pill">Participante 02</span><span class="pill">Múltiplos inquéritos</span></div>
-    <div class="finding-action">→ Labels visíveis nos elementos de navegação principais, pelo menos nas primeiras sessões</div>
+  <!-- ÁREA 2: FEED E HOMEPAGE -->
+  <div class="ov-area">
+    <div class="ov-area-hd">
+      <span class="ov-area-num">02</span>
+      <div class="ov-area-title">Feed e homepage</div>
+      <span class="sev a">Alto</span>
+    </div>
+    <div class="ov-area-body">
+      <div class="ov-col">
+        <div class="ov-col-label">Problema central</div>
+        <p class="ov-col-text">Duas das três imagens do inquérito têm o mesmo fundo e cor, o que torna difícil perceber intuitivamente que representam ecrãs distintos da app. Um respondente identificou: "percebo que a informação é diferente, mas não sei ao certo que tipo de janela é essa, porque não consigo ver ligação aos ícones de baixo." O feed cronológico é consensualmente aceite como a organização correta, mas as propostas são visualmente similares entre si, tornando difícil distinguir o que já foi lido.</p>
+      </div>
+      <div class="ov-col">
+        <div class="ov-col-label">O que funciona</div>
+        <p class="ov-col-text">A ordem cronológica é percebida como correta por todos os participantes. O estado de aprovação ou rejeição é imediatamente visível no cartão. A identificação do partido proponente é clara e foi o elemento mais elogiado espontaneamente no inquérito.</p>
+        <div class="ov-col-label" style="margin-top:14px">Pedido de feature</div>
+        <p class="ov-col-text">Filtros de tema no feed (sem substituir cronologia). Tag de tema visível em cada cartão antes de expandir. Indicador subtil de propostas já vistas. Distinção visual mais clara entre ecrãs distintos da app.</p>
+      </div>
+    </div>
+    <div class="ov-area-sources"><span class="pill">P02 P03 P05 P06</span><span class="pill">Múltiplos inquéritos</span></div>
   </div>
 
-  <div class="finding">
-    <div class="finding-hd"><span class="sev a">Alto</span><span class="finding-title">Ninguém percebe o sistema de legislaturas, toda a gente quer datas reais</span></div>
-    <p class="finding-body">O filtro por legislaturas numeradas (13ª, 16ª...) é invisível para o cidadão comum. O referencial temporal de toda a gente é o calendário real: anos, meses, acontecimentos da atualidade. Legislaturas são uma convenção interna do parlamento que não faz parte do vocabulário de quem não trabalha na área. Vários respondentes do inquérito mencionaram que o filtro só faria sentido se viesse acompanhado do intervalo de anos correspondente.</p>
-    <div class="pills"><span class="pill">Participante 01</span><span class="pill">Participante 02</span><span class="pill">Confirmado no inquérito</span></div>
-    <div class="finding-action">→ Substituir ou complementar as legislaturas por filtros de data real, com o intervalo de anos visível</div>
+  <!-- ÁREA 3: PROPOSTAS INDIVIDUAIS -->
+  <div class="ov-area">
+    <div class="ov-area-hd">
+      <span class="ov-area-num">03</span>
+      <div class="ov-area-title">Proposta individual</div>
+      <span class="sev a">Alto</span>
+    </div>
+    <div class="ov-area-body">
+      <div class="ov-col">
+        <div class="ov-col-label">Problema central</div>
+        <p class="ov-col-text">O texto integral é a única alternativa ao título. Não há nível intermédio. Quando a proposta é uma "alteração" a um diploma existente, o título não diz o que está a ser alterado — "base de alteração do clima" não diz nada a quem não conhece o diploma base. O like/dislike foi questionado em todas as sessões e em várias respostas do inquérito, com interpretações opostas: uns leram como posição sobre a proposta, outros como posição sobre o resultado. Os votos dos partidos ficam ocultos por expansão em vez de visíveis no cartão.</p>
+      </div>
+      <div class="ov-col">
+        <div class="ov-col-label">O que funciona</div>
+        <p class="ov-col-text">O resultado global (aprovado/rejeitado) é imediatamente visível. A identificação do partido proponente, a data e o tipo de proposta são claros. O botão "ler na íntegra" é compreendido quando o utilizador o encontra.</p>
+        <div class="ov-col-label" style="margin-top:14px">Pedido de feature</div>
+        <p class="ov-col-text">Resumo estruturado em 3 a 5 pontos. Votos sempre visíveis no cartão, sem expansão. Renomear like/dislike para "a favor / contra". Contexto do diploma que está a ser alterado. Argumentos e justificações dos partidos para o sentido de voto. Percentagem de deputados que votaram em cada sentido.</p>
+      </div>
+    </div>
+    <div class="ov-area-sources"><span class="pill">Todos os presenciais</span><span class="pill">#1 e #2 no inquérito</span></div>
+  </div>
+
+  <!-- ÁREA 4: PARTIDOS -->
+  <div class="ov-area">
+    <div class="ov-area-hd">
+      <span class="ov-area-num">04</span>
+      <div class="ov-area-title">Partidos</div>
+      <span class="sev a">Alto</span>
+    </div>
+    <div class="ov-area-body">
+      <div class="ov-col">
+        <div class="ov-col-label">Problema central</div>
+        <p class="ov-col-text">O ícone de lupa na barra de navegação não evoca "ir para partidos" — evoca pesquisa de texto. Foi o único ícone que todos os participantes interpretaram de forma errada antes de clicar. A página de partido mostra apenas o que o partido propôs, não como votou nas propostas de outros. A imagem do partido no cartão do feed não é clicável para abrir a página do partido — um respondente do inquérito mencionou explicitamente: "a primeira coisa que fiz foi clicar na imagem de perfil do partido no feed e não acontece nada. Devia logo abrir." A etiqueta "estatísticas" não comunica o conteúdo do painel.</p>
+      </div>
+      <div class="ov-col">
+        <div class="ov-col-label">O que funciona</div>
+        <p class="ov-col-text">A distinção visual entre partidos no parlamento e fora do parlamento foi identificada como positiva. A página de partido com as suas cores próprias é reconhecida como um ecrã distinto e claro — o único ecrã em que a distinção visual funciona bem.</p>
+        <div class="ov-col-label" style="margin-top:14px">Pedido de feature</div>
+        <p class="ov-col-text">Clique na imagem do partido no feed abre a página do partido. Aba de votações em propostas de outros. Pesquisa dentro da página de partido. Perfis de deputados com currículo, ausências e conflitos de interesse. Deputados organizados por círculo eleitoral. Renomear "estatísticas".</p>
+      </div>
+    </div>
+    <div class="ov-area-sources"><span class="pill">P01 P02 P03 P04 P05 P06</span><span class="pill">Múltiplos inquéritos</span></div>
+  </div>
+
+  <!-- ÁREA 5: GUARDAR E PERFIL -->
+  <div class="ov-area">
+    <div class="ov-area-hd">
+      <span class="ov-area-num">05</span>
+      <div class="ov-area-title">Guardar e perfil</div>
+      <span class="sev r">Crítico</span>
+    </div>
+    <div class="ov-area-body">
+      <div class="ov-col">
+        <div class="ov-col-label">Problema central</div>
+        <p class="ov-col-text">Guardar uma proposta obriga a criar conta. É o bloqueio mais referido em toda a investigação: mais de 12 respostas no inquérito e presente em todos os testes presenciais. A expectativa dominante é clara — guardar localmente, sem conta, com sincronização opcional quando o utilizador cria perfil. As propostas guardadas estão ordenadas por data de publicação, não por data em que foram guardadas, o que contraria a expectativa de quem guarda por ordem de descoberta.</p>
+      </div>
+      <div class="ov-col">
+        <div class="ov-col-label">O que funciona</div>
+        <p class="ov-col-text">O conceito é compreendido por todos. Quando existe conta, o acesso às propostas guardadas é intuitivo. A funcionalidade de reagir e guardar faz sentido quando o fluxo não tem fricção.</p>
+        <div class="ov-col-label" style="margin-top:14px">Pedido de feature</div>
+        <p class="ov-col-text">Guardar localmente, sincronizar ao criar conta. Pastas por tema ou partido. Ordenação por data de guardado, não de publicação. Notificações por proposta, activadas por escolha.</p>
+      </div>
+    </div>
+    <div class="ov-area-sources"><span class="pill">Todos os presenciais</span><span class="pill">+12 respostas no inquérito</span><span class="pill">Bloqueio de conversão #1</span></div>
+  </div>
+
+  <!-- ÁREA 6: NAVEGAÇÃO E ÍCONES -->
+  <div class="ov-area">
+    <div class="ov-area-hd">
+      <span class="ov-area-num">06</span>
+      <div class="ov-area-title">Navegação e ícones</div>
+      <span class="sev a">Alto</span>
+    </div>
+    <div class="ov-area-body">
+      <div class="ov-col">
+        <div class="ov-col-label">Problema central</div>
+        <p class="ov-col-text">Quatro ícones na barra de navegação. Notificações e perfil foram imediatamente reconhecidos. Os outros dois — feed e partidos — causaram confusão em todos os testes e em vários registos do inquérito. Um respondente descreveu o processo: "cliquei em todos os ícones da parte de baixo para perceber o que eram... depois procurei outros botões na app e descobri o menu, pensei que ia encontrar categorias, mas apenas as legislaturas... só depois é que vi o ícone da pesquisa." As três barras horizontais, que funcionam como filtro, foram interpretadas como menu de definições ou hamburguer menu em todos os testes presenciais e em pelo menos quatro respostas do inquérito. O filtro de legislatura foi encontrado "por acaso" em múltiplos testes.</p>
+      </div>
+      <div class="ov-col">
+        <div class="ov-col-label">O que funciona</div>
+        <p class="ov-col-text">O ícone de notificações e o ícone de perfil foram reconhecidos imediatamente em todos os testes. Quando se percebe onde está cada coisa, a navegação funciona bem. O problema é que nem sempre se percebe.</p>
+        <div class="ov-col-label" style="margin-top:14px">Pedido de feature</div>
+        <p class="ov-col-text">Labels visíveis pelo menos na primeira sessão. Ícone de partidos com forma distinta da lupa de pesquisa. Filtro de legislatura visível e rotulado como aba, não como menu de contexto. Filtro esperado para temas, não para legislaturas.</p>
+      </div>
+    </div>
+    <div class="ov-area-sources"><span class="pill">Todos os presenciais</span><span class="pill">Múltiplos inquéritos</span></div>
+  </div>
+
+  <!-- ÁREA 7: ACESSIBILIDADE E INCLUSÃO -->
+  <div class="ov-area">
+    <div class="ov-area-hd">
+      <span class="ov-area-num">07</span>
+      <div class="ov-area-title">Acessibilidade e inclusão</div>
+      <span class="sev t">Emergente</span>
+    </div>
+    <div class="ov-area-body">
+      <div class="ov-col">
+        <div class="ov-col-label">Sinal emergente</div>
+        <p class="ov-col-text">Acessibilidade não entrou no guião dos testes presenciais, mas emergiu no inquérito. Um respondente recomendou explicitamente tornar a app acessível para utilizadores com necessidades especiais — contraste, tamanho de texto, suporte a leitores de ecrã. A app tem ambição de ser uma ferramenta de literacia democrática para toda a população; isso inclui utilizadores com baixa visão, dislexia ou dificuldades motoras. A dependência de Google Play Services bloqueia também dispositivos com limitações de hardware. Um respondente da faixa 50-59 anos pediu legenda nos botões por não saber o que faziam — o problema de iconografia tem impacto maior em faixas etárias mais altas.</p>
+      </div>
+      <div class="ov-col">
+        <div class="ov-col-label">O que existe</div>
+        <p class="ov-col-text">A app tem modo escuro (pedido por 3 participantes presenciais e múltiplos respondentes do inquérito) disponível no website de investigação, mas não ainda na app móvel. O layout é relativamente simples, o que favorece a acessibilidade base.</p>
+        <div class="ov-col-label" style="margin-top:14px">Recomendação</div>
+        <p class="ov-col-text">Auditoria de acessibilidade WCAG 2.1 AA. Modo escuro na app móvel. Tamanho de texto configurável. Labels de acessibilidade nos ícones de navegação. Suporte a leitores de ecrã VoiceOver e TalkBack.</p>
+      </div>
+    </div>
+    <div class="ov-area-sources"><span class="pill">Inquérito</span><span class="pill">Participante 01</span><span class="pill">Respondentes 50+ anos</span></div>
+  </div>
+
+  <!-- ÁREA 8: CONFIANÇA E CREDIBILIDADE -->
+  <div class="ov-area">
+    <div class="ov-area-hd">
+      <span class="ov-area-num">08</span>
+      <div class="ov-area-title">Confiança e credibilidade</div>
+      <span class="sev t">Emergente</span>
+    </div>
+    <div class="ov-area-body">
+      <div class="ov-col">
+        <div class="ov-col-label">Tensão identificada</div>
+        <p class="ov-col-text">Dois respondentes questionaram directamente a origem dos dados: "quem coloca a informação?" e "qual a probabilidade de se gerar fake news?". Outros elogiaram a app por ser verificável, em contraste com o que chega pelas redes sociais. A tensão é real: a PoliTrack agrega dados oficiais do parlamento, mas não o diz em parte nenhuma. Outro respondente ficou em dúvida se a informação era colocada pelos próprios partidos ou por alguém no parlamento. Esta ambiguidade sobre a origem dos dados é um risco de credibilidade que a app resolve factualmente mas não comunica.</p>
+      </div>
+      <div class="ov-col">
+        <div class="ov-col-label">O que funciona</div>
+        <p class="ov-col-text">Quem entende que os dados vêm do parlamento oficial confia imediatamente. "É uma fonte fidedigna de informação" foi o posicionamento espontâneo de pelo menos um respondente que já instalou a app.</p>
+        <div class="ov-col-label" style="margin-top:14px">Recomendação</div>
+        <p class="ov-col-text">Indicação visível da fonte dos dados (parlamento.pt) em cada proposta ou no rodapé. Explicação breve do processo de curadoria. Distinguir claramente entre dado oficial e funcionalidade social da app.</p>
+      </div>
+    </div>
+    <div class="ov-area-sources"><span class="pill">Inquérito</span><span class="pill">2 respostas diretas</span></div>
   </div>
 
   <div class="rule"></div>
-  <span class="eyebrow">Ranking de features</span>
-  <div class="block-title" style="margin-bottom:22px">O que mais se repetiu nos seis testes presenciais</div>
+  <span class="eyebrow">Síntese quantitativa</span>
+  <div class="block-title">O que se repete mais, dos dois métodos</div>
 
-  <div class="freq-row"><span class="freq-label">Pesquisa persistente em todos os ecrãs</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:100%"></div></div><span class="freq-n">6/6</span></div>
-  <div class="freq-row"><span class="freq-label">Resumo em bullet points de cada proposta</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:100%"></div></div><span class="freq-n">6/6</span></div>
-  <div class="freq-row"><span class="freq-label">Notificações ao guardar uma proposta</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:100%"></div></div><span class="freq-n">6/6</span></div>
-  <div class="freq-row"><span class="freq-label">Filtro combinado por partido, data e tipo de documento</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:83%"></div></div><span class="freq-n">5/6</span></div>
-  <div class="freq-row"><span class="freq-label">Partilha externa de propostas via link</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:83%"></div></div><span class="freq-n">5/6</span></div>
-  <div class="freq-row"><span class="freq-label">Perfis individuais de deputados</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:67%"></div></div><span class="freq-n">4/6</span></div>
-  <div class="freq-row"><span class="freq-label">Feed personalizado por interesses (onboarding)</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:50%"></div></div><span class="freq-n">3/6</span></div>
-  <div class="freq-row"><span class="freq-label">Contexto externo associado a cada proposta</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:33%"></div></div><span class="freq-n">2/6</span></div>
+  <div class="freq-row"><span class="freq-label">Pesquisa não funciona com linguagem natural</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:100%"></div></div><span class="freq-n">6/6 + 64</span></div>
+  <div class="freq-row"><span class="freq-label">Guardar sem conta obrigatória</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:100%"></div></div><span class="freq-n">6/6 + 12+</span></div>
+  <div class="freq-row"><span class="freq-label">Resumo estruturado de cada proposta</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:100%"></div></div><span class="freq-n">6/6 + 18+</span></div>
+  <div class="freq-row"><span class="freq-label">Ícones da navegação não claros</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:100%"></div></div><span class="freq-n">6/6 + 6+</span></div>
+  <div class="freq-row"><span class="freq-label">Argumentos dos partidos por votação</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:100%"></div></div><span class="freq-n">6/6 + 8+</span></div>
+  <div class="freq-row"><span class="freq-label">Historial de votações de partido em propostas alheias</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:83%"></div></div><span class="freq-n">5/6 + 4+</span></div>
+  <div class="freq-row"><span class="freq-label">Modo escuro</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:67%"></div></div><span class="freq-n">3/6 + 5+</span></div>
+  <div class="freq-row"><span class="freq-label">Filtro por tema no feed</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:100%"></div></div><span class="freq-n">6/6 + 20+</span></div>
+  <div class="freq-row"><span class="freq-label">Calendário de sessões previstas</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:50%"></div></div><span class="freq-n">P06 + 3</span></div>
+  <div class="freq-row"><span class="freq-label">Acessibilidade</span><div class="freq-bar-wrap"><div class="freq-bar" style="width:17%"></div></div><span class="freq-n">Emergente</span></div>
 
-  <div class="highlight" style="margin-top:20px">
-    <div class="highlight-label">Integração com o inquérito</div>
-    <div class="highlight-title">Ao juntar as 62 respostas online, entram no topo dois pedidos que o ranking presencial não mostrava</div>
-    <p class="highlight-body">Quando se cruzam os testes presenciais com o inquérito, dois pedidos ganham prioridade clara: guardar sem conta e modo escuro. O primeiro é um bloqueio direto de conversão e retenção. O segundo é o pedido de interface mais recorrente nas respostas abertas.</p>
+  <div class="callout" style="margin-top:48px">
+    <div class="callout-label">A conclusão mais importante</div>
+    <p class="callout-body">A PoliTrack funciona. O conceito é reconhecido imediatamente, o formato faz sentido, e quem chega com interesse político real fica surpreendido de forma positiva com o que existe. O desafio não é provar que a app tem valor — é remover as barreiras que impedem as pessoas de descobri-lo.</p>
   </div>
+
 </section>
+
 
 <!-- ============================================================
      ARQUÉTIPOS
@@ -556,32 +755,32 @@ button, input { font-family: var(--fb); }
 <section class="pane" id="pane-archetypes">
   <span class="eyebrow">Arquétipos de utilizador</span>
   <h1 class="section-title">Quem usa ou usaria<br><em>a PoliTrack</em></h1>
-  <p class="section-desc">Quatro perfis distintos emergem dos testes e do inquérito. Diferem na literacia política, no ponto de entrada e na tolerância à fricção inicial. O desenho da experiência tem de servir todos sem pressupor familiaridade com linguagem parlamentar.</p>
+  <p class="section-desc">Quatro perfis emergem dos testes e do inquérito. Diferem na literacia política, no ponto de entrada e na tolerância à fricção. A experiência tem de ser acessível a todos sem pressupor familiaridade com linguagem parlamentar.</p>
 
   <div class="persona-block">
     <div class="persona-cell">
       <span class="persona-num">01</span>
       <div class="persona-name">Observador contextual</div>
       <div class="persona-tag">Chega por um tema, não por rotina</div>
-      <p class="persona-desc">Consome política quando o tema lhe chega pelos jornais, pela televisão ou por conversa. Não procura ativamente. Entraria na PoliTrack com um assunto concreto que ouviu e quer confirmar. O bloqueio principal não é falta de interesse; é a app não reconhecer a linguagem com que pesquisa.</p>
+      <p class="persona-desc">Acompanha política quando o tema lhe chega pelas notícias ou por conversa. Não vai procurar. Quando abre a PoliTrack, já tem um assunto concreto em mente. O problema não é falta de interesse — é a pesquisa não reconhecer as palavras que usa.</p>
     </div>
     <div class="persona-cell">
       <span class="persona-num">02</span>
       <div class="persona-name">Utilizador eficiente</div>
       <div class="persona-tag">Quer filtrar, não explorar</div>
-      <p class="persona-desc">Procura informação concentrada e operacional. Não quer explorar a estrutura institucional do parlamento; quer combinar tema, partido, data e estado da proposta e chegar depressa ao que precisa. Sem filtros combinados, a app perde valor imediatamente.</p>
+      <p class="persona-desc">Entra com uma pergunta e quer uma resposta rápida. Não está para explorar. Quer combinar partido, tema e data e chegar ao resultado em dois cliques. Sem filtros combinados, a app não tem valor para este perfil.</p>
     </div>
     <div class="persona-cell">
       <span class="persona-num">03</span>
       <div class="persona-name">Seguidor político ativo</div>
       <div class="persona-tag">Confirmado nos testes e no inquérito</div>
-      <p class="persona-desc">Acompanha política com regularidade, conhece temas, atores e processos, e procura profundidade: argumentos dos partidos, histórico de votações, perfis de deputados, conflitos de interesse e partilha com contexto. O bloqueio principal não está na navegação; está na superficialidade do conteúdo disponível.</p>
+      <p class="persona-desc">Sabe como o parlamento funciona, segue os partidos e os temas ao longo do tempo. O que a PoliTrack já faz é pouco para este perfil: quer argumentos, histórico de votações, perfis de deputados, conflitos de interesse. A app navega bem para esta pessoa — o problema é que o conteúdo não tem profundidade suficiente.</p>
     </div>
     <div class="persona-cell">
       <span class="persona-num">04</span>
       <div class="persona-name">Desengajado convertível</div>
       <div class="persona-tag">Baixa rotina política, alta sensibilidade ao formato</div>
-      <p class="persona-desc">Raramente ou nunca acompanha política. Compara a experiência a formatos como TikTok ou Instagram e decide em segundos se vale a pena ficar. O seu critério principal não é a completude da informação; é a clareza do formato, a rapidez e o baixo esforço cognitivo. Se a primeira pesquisa falha ou a linguagem parece técnica, desiste.</p>
+      <p class="persona-desc">Raramente acompanha política. Decide em segundos se a app vale o esforço. O critério não é a qualidade da informação — é a clareza do formato e a facilidade dos primeiros passos. Se a primeira pesquisa falha, não tenta uma segunda. A app perde esta pessoa antes de ela perceber o que existe dentro.</p>
     </div>
   </div>
 
@@ -669,20 +868,25 @@ button, input { font-family: var(--fb); }
 <section class="pane" id="pane-problems">
   <span class="eyebrow">Testes presenciais · Usabilidade</span>
   <h1 class="section-title">Problemas<br><em>identificados</em></h1>
-  <p class="section-desc">Catalogados por severidade, dos que bloqueiam o uso core aos que degradam a experiência. Todos foram observados diretamente ou confirmados por múltiplos respondentes do inquérito, não inferidos.</p>
+  <p class="section-desc">Catalogados por severidade, dos que bloqueiam o uso principal aos que degradam a experiência sem a impedir. Todos foram observados diretamente em teste ou confirmados por múltiplos respondentes do inquérito.</p>
+
+  <div class="callout">
+    <div class="callout-label">Padrão central</div>
+    <p class="callout-body">Cada participante chegou ao mesmo bloqueio por um caminho diferente. A pesquisa não funciona com linguagem quotidiana. Os ícones de navegação não correspondem às expectativas. Guardar exige criar conta. São três problemas distintos mas com a mesma raiz: a app foi construída com o vocabulário de quem a concebeu, não com o de quem a vai usar.</p>
+  </div>
 
   <span class="eyebrow">Pesquisa e navegação</span>
 
   <div class="finding">
     <div class="finding-hd"><span class="sev r">Crítico</span><span class="finding-title">A pesquisa não devolve resultados com termos do dia a dia</span></div>
-    <p class="finding-body">Todos os participantes presenciais tentaram pesquisar por temas mediáticos e ou não receberam nada ou receberam resultados irrelevantes. A app indexa títulos formais. O padrão repetiu-se no inquérito: ninguém pesquisou pelo título técnico de uma proposta. Adicionalmente, foi encontrado um bug concreto em que o singular "propina" não devolve resultados mas o plural "propinas" já funciona.</p>
+    <p class="finding-body">Todos os participantes pesquisaram por temas que conheciam das notícias e ou não receberam nada ou receberam resultados sem ligação ao que procuravam. A app filtra títulos formais. Ninguém pesquisa pelo título técnico de uma proposta parlamentar. Bug confirmado: "propina" no singular não devolve resultados, "propinas" no plural já funciona.</p>
     <div class="q">"Procurei duas coisas diferentes, foram para as mesmas cenas. A lupa não será a melhor maneira de pesquisar isto."<span class="q-who">Participante 01 · Teste presencial</span></div>
     <div class="finding-action">→ Indexação semântica por tema, sinónimos jornalísticos e normalização singular/plural</div>
   </div>
 
   <div class="finding">
     <div class="finding-hd"><span class="sev r">Crítico</span><span class="finding-title">A lupa desaparece quando se entra dentro de uma secção</span></div>
-    <p class="finding-body">Dentro de páginas de partidos ou de secções internas, o acesso à pesquisa desaparece. Para quem navega por pesquisa, este é um bloqueio imediato que obriga a voltar à página inicial a cada nova pesquisa. Vários respondentes do inquérito confirmaram o mesmo problema, nomeadamente mencionando que a lupa desaparece depois de filtrar.</p>
+    <p class="finding-body">Dentro de páginas de partidos ou de secções internas, a barra de pesquisa desaparece. Quem navega por pesquisa tem de voltar ao ecrã inicial em cada pesquisa nova. Vários respondentes do inquérito confirmaram o mesmo problema, nomeadamente mencionando que a lupa desaparece depois de filtrar.</p>
     <div class="q">"A lupa durante todo o período de navegação deveria estar disponível. Imagina que eu estou aqui e vejo, mas eu sei que o PSD tinha aqui uma coisa qualquer. Eu tive que voltar para trás."<span class="q-who">Participante 02 · Teste presencial</span></div>
     <div class="finding-action">→ Pesquisa persistente e acessível em todos os ecrãs da app</div>
   </div>
@@ -758,19 +962,24 @@ button, input { font-family: var(--fb); }
 <section class="pane" id="pane-features">
   <span class="eyebrow">Testes presenciais · Features</span>
   <h1 class="section-title">O que os utilizadores<br><em>querem</em></h1>
-  <p class="section-desc">Organizadas por prioridade, cruzando a frequência com que foram pedidas nos testes presenciais e a confirmação no inquérito online.</p>
+  <p class="section-desc">Pedidos organizados por prioridade, cruzando frequência nos testes presenciais e confirmação no inquérito. O critério relevante não é "foi pedido" — é "foi pedido de forma independente por perfis distintos".</p>
+
+  <div class="callout amber">
+    <div class="callout-label">Critério de prioridade</div>
+    <p class="callout-body">O facto de uma feature ter sido pedida uma vez não a torna prioritária. O critério aqui é outro: foi pedida de forma independente por perfis com literacias, idades e relações com política completamente diferentes. Quando isso acontece, é porque a necessidade é real e não depende de um contexto específico.</p>
+  </div>
 
   <span class="eyebrow">Prioridade máxima</span>
 
   <div class="finding">
     <div class="finding-hd"><span class="sev r">Pedida em todos os testes</span><span class="finding-title">Pesquisa que funcione por linguagem natural e tema</span></div>
-    <p class="finding-body">A pesquisa tem de devolver resultados relevantes quando alguém escreve "lei anti-trans", "habitação" ou "guerra na Ucrânia". Ninguém pesquisa pelo título formal de uma proposta. É a feature com o maior impacto direto no caso de uso mais básico da app e foi confirmada por todos os participantes presenciais e por vários respondentes do inquérito.</p>
+    <p class="finding-body">A pesquisa tem de reconhecer "lei anti-trans", "habitação", "creches" ou qualquer outra linguagem que se usa fora do parlamento. Ninguém sabe os títulos formais das propostas. É a melhoria com maior impacto no uso mais básico da app.</p>
     <div class="finding-action">→ Indexação por tags, temas, sinónimos e linguagem jornalística</div>
   </div>
 
   <div class="finding">
-    <div class="finding-hd"><span class="sev r">Pedida em quase todos os testes</span><span class="finding-title">Resumo em bullet points de cada proposta</span></div>
-    <p class="finding-body">Ninguém quer ler o texto integral de uma proposta parlamentar. Querem três a cinco pontos que lhes digam do que trata, quem propôs, o que muda e qual o estado atual. O texto integral fica disponível para quem quiser aprofundar, mas não pode ser a única forma de aceder ao conteúdo. Esta necessidade foi confirmada com força no inquérito, com vários respondentes a pedir explicitamente "mais informação do que a que aparece no feed, mas sem ter de carregar em ler na íntegra".</p>
+    <div class="finding-hd"><span class="sev r">Pedida em quase todos os testes</span><span class="finding-title">Resumo estruturado de cada proposta</span></div>
+    <p class="finding-body">Ninguém começa pelo texto integral. O que se quer são três a cinco linhas: do que trata, quem propôs, o que muda, em que estado está. O texto completo fica disponível para quem quiser ir mais fundo — mas não pode ser o único caminho para perceber uma proposta.</p>
     <div class="q">"Seria interessante perceber que o PAN tem pela ajuda à Ucrânia, ok, e o que é que ele propõe? Um, dois, três, quatro. Assim como se fosse um resumo, e depois sempre ter acesso ao texto extenso."<span class="q-who">Participante 02 · Teste presencial</span></div>
     <div class="finding-action">→ Resumo estruturado automático no topo de cada proposta, gerado por IA ou curado</div>
   </div>
@@ -822,17 +1031,27 @@ button, input { font-family: var(--fb); }
 <section class="pane" id="pane-positives">
   <span class="eyebrow">Testes presenciais · Pontos fortes</span>
   <h1 class="section-title">O que<br><em>funciona</em></h1>
-  <p class="section-desc">Tão importante quanto identificar problemas é perceber o que já funciona. Para não mudar o que não precisa de ser mudado e para perceber qual é a vantagem competitiva real da app.</p>
+  <p class="section-desc">Saber o que já funciona bem é tão útil quanto saber o que está a falhar. Permite preservar as decisões certas enquanto se corrige o resto.</p>
+
+  <div class="callout green">
+    <div class="callout-label">Sinal positivo</div>
+    <p class="callout-body">Em quase todas as sessões, os participantes ficaram surpreendidos com o que a app fazia — de forma positiva. A expectativa era uma coisa mais simples e mais crua. O que encontraram foi mais completo do que esperavam. Isso é o sinal mais importante de toda a investigação: o produto tem valor real. O que falta é remover o que impede as pessoas de o descobrir.</p>
+  </div>
+
+  <div class="q-feature">
+    <p class="q-feature-text">Consegues identificar automaticamente os partidos, consegues ver quais estão a favor e quais estão contra, consegues perceber se foi rejeitado ou se foi aprovado. Logo, direto.</p>
+    <span class="q-feature-who">Participante 02 · Teste presencial</span>
+  </div>
 
   <div class="finding">
     <div class="finding-hd"><span class="sev g">Confirmado em múltiplos testes</span><span class="finding-title">Identificação visual de partidos é imediata e clara</span></div>
-    <p class="finding-body">Todos os participantes conseguiram identificar instantaneamente o partido associado a cada proposta. A solução visual foi reconhecida como um dos pontos mais fortes da app, resolve um problema real de transparência sem esforço para o utilizador. No inquérito, vários respondentes mencionaram espontaneamente a identificação de partidos como o ponto mais claro e bem conseguido.</p>
+    <p class="finding-body">Todos os participantes identificaram o partido de cada proposta sem esforço. É a decisão visual mais consistentemente elogiada em toda a investigação. No inquérito, vários respondentes mencionaram espontaneamente a identificação de partidos como o ponto mais claro e bem conseguido.</p>
     <div class="q">"Consegues identificar automaticamente os partidos, consegues ver quais estão a favor e quais estão contra, consegues perceber se foi rejeitado ou se foi aprovado. Logo, direto."<span class="q-who">Participante 02 · Teste presencial</span></div>
   </div>
 
   <div class="finding">
     <div class="finding-hd"><span class="sev g">Confirmado</span><span class="finding-title">Estado de aprovação ou rejeição visível no cartão</span></div>
-    <p class="finding-body">Ver de imediato se uma proposta foi aprovada ou rejeitada, sem ter de abrir o detalhe, foi reconhecido como uma vantagem clara face às fontes de informação alternativas. Foi o elemento mais citado espontaneamente no inquérito quando se pediu o que estava mais claro na app.</p>
+    <p class="finding-body">Ver o resultado da votação sem abrir a proposta foi reconhecido por quase todos como a principal vantagem da app face ao site oficial do parlamento e ao que chega pelas redes sociais. Foi o elemento mais citado espontaneamente no inquérito quando se pediu o que estava mais claro na app.</p>
   </div>
 
   <div class="finding">
@@ -861,7 +1080,7 @@ button, input { font-family: var(--fb); }
 <section class="pane" id="pane-sessions">
   <span class="eyebrow">Testes presenciais · Individual</span>
   <h1 class="section-title">Sessões<br><em>individuais</em></h1>
-  <p class="section-desc">Cada sessão como referência individual, útil para cruzar com os padrões gerais ou para aprofundar um caso concreto.</p>
+  <p class="section-desc">Cada sessão está documentada separadamente. Permite cruzar com os padrões gerais ou aprofundar um participante em particular.</p>
 
   <div class="s-row" onclick="go('s01')">
     <div class="s-num">01</div>
@@ -1260,7 +1479,7 @@ button, input { font-family: var(--fb); }
     </div>
 
     <div class="finding">
-      <div class="finding-hd"><span class="sev r">Prioridade máxima</span><span class="finding-title">Resumo em bullet points de cada proposta</span></div>
+      <div class="finding-hd"><span class="sev r">Prioridade máxima</span><span class="finding-title">Resumo estruturado de cada proposta</span></div>
       <p class="finding-body">Um TL;DR estruturado: partido proponente, o que propõe, em que pontos, acesso ao texto completo para quem quiser aprofundar. Não quer passar 20 minutos a ler um documento legal para perceber do que trata.</p>
       <div class="q">"Seria interessante perceber que o PAN tem pela ajuda à Ucrânia, ok, e o que é que ele propõe? Um, dois, três, quatro. Assim como se fosse um resumo, e depois sempre ter acesso ao texto extenso."<span class="q-who">Participante 02 · Sessão 02</span></div>
     </div>
@@ -1388,17 +1607,99 @@ button, input { font-family: var(--fb); }
   background: var(--cyan);
 }
 
+/* ================================================
+   VISUAL VARIETY — CALLOUT BLOCK
+   ================================================ */
+/* A stronger pull-quote / highlight for key insights */
+.callout {
+  border-left: 3px solid var(--cyan);
+  background: rgba(35,218,255,.055);
+  padding: 20px 24px;
+  margin: 28px 0;
+}
+.callout-label {
+  font-family: var(--fh); font-size: 8px; font-weight: 800;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--cyan); margin-bottom: 10px;
+}
+.callout-body {
+  font-size: 14px; color: var(--text); line-height: 1.78;
+}
+
+/* Large numbered finding (for top-ranked items) */
+.finding-num {
+  font-family: var(--fh); font-size: 48px; font-weight: 800;
+  color: rgba(35,218,255,.12); line-height: 1;
+  position: absolute; right: 0; top: 28px;
+  letter-spacing: .02em; user-select: none;
+}
+
+/* Stat comparison row (two values side by side) */
+.stat-compare {
+  display: flex; gap: 0;
+  border: 1px solid var(--line); margin: 28px 0;
+}
+.stat-compare-cell {
+  flex: 1; padding: 24px 28px; border-right: 1px solid var(--line);
+}
+.stat-compare-cell:last-child { border-right: none; }
+.stat-compare-n {
+  font-family: var(--fh); font-size: 36px; font-weight: 800;
+  color: var(--cyan); line-height: 1; margin-bottom: 6px;
+}
+.stat-compare-l { font-size: 12px; color: var(--text-low); text-transform: uppercase; letter-spacing: .08em; }
+.stat-compare-body { font-size: 13px; color: var(--text-mid); line-height: 1.7; margin-top: 12px; }
+
+/* Divider with label */
+.divider-label {
+  display: flex; align-items: center; gap: 16px; margin: 48px 0 32px;
+}
+.divider-label::before, .divider-label::after {
+  content: ''; flex: 1; height: 1px; background: var(--line);
+}
+.divider-label-text {
+  font-family: var(--fh); font-size: 8px; font-weight: 800;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--text-low);
+  white-space: nowrap;
+}
+
+/* Featured quote (large, standalone) */
+.q-feature {
+  padding: 32px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  margin: 40px 0;
+}
+.q-feature-text {
+  font-size: 20px; font-weight: 400; color: var(--text); line-height: 1.5;
+  max-width: 640px; margin-bottom: 16px;
+}
+.q-feature-text::before { content: '"'; color: var(--cyan); }
+.q-feature-text::after  { content: '"'; color: var(--cyan); }
+.q-feature-who {
+  font-family: var(--fh); font-size: 9px; font-weight: 800;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--teal);
+}
+
+/* Two-tone highlight (amber variant) */
+.callout.amber {
+  border-left-color: var(--amber);
+  background: rgba(255,193,69,.04);
+}
+.callout.green {
+  border-left-color: var(--green);
+  background: rgba(107,232,168,.04);
+}
+
 /* Bar chart rows */
 .brow {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 10px 0;
+  padding: 12px 0;
   border-bottom: 1px solid var(--line-f);
 }
 .brow:first-child { border-top: 1px solid var(--line-f); }
-.brow-label { font-size: 12.5px; color: var(--text); flex: 1; }
-.brow-wrap { width: 140px; height: 3px; background: rgba(255,255,255,.08); flex-shrink: 0; }
+.brow-label { font-size: 13px; color: var(--text); flex: 1; line-height: 1.4; }
+.brow-wrap { width: 160px; height: 4px; background: rgba(255,255,255,.08); flex-shrink: 0; border-radius: 2px; }
 .brow-fill { height: 100%; }
 .brow-fill.teal { background: var(--teal); }
 .brow-fill.cyan { background: var(--cyan); }
@@ -1410,23 +1711,24 @@ button, input { font-family: var(--fb); }
 /* Insight rows (for problems section) */
 .irow {
   display: flex;
-  gap: 16px;
-  padding: 22px 0;
+  gap: 20px;
+  padding: 28px 0;
   border-bottom: 1px solid var(--line);
 }
 .irow:first-child { border-top: 1px solid var(--line); }
 .irow-sev { flex-shrink: 0; padding-top: 2px; }
 .irow-body { flex: 1; min-width: 0; }
-.irow-title { font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.35; }
-.irow-desc { font-size: 14px; color: var(--text-mid); line-height: 1.78; margin-bottom: 12px; }
+.irow-title { font-size: 17px; font-weight: 600; color: var(--text); margin-bottom: 12px; line-height: 1.32; }
+.irow-desc { font-size: 14.5px; color: var(--text-mid); line-height: 1.88; margin-bottom: 16px; }
 .irow-q {
   border-left: 2px solid rgba(35,218,255,.25);
-  padding: 7px 12px;
-  font-size: 12px;
+  padding: 10px 18px;
+  font-size: 13px;
   font-style: italic;
-  color: rgba(35,218,255,.75);
-  line-height: 1.6;
-  margin-bottom: 7px;
+  color: var(--text-mid);
+  line-height: 1.72;
+  margin-bottom: 8px;
+  background: rgba(35,218,255,.03);
 }
 .irow-who {
   font-size: 10px;
@@ -2574,14 +2876,19 @@ button, input { font-family: var(--fb); }
 <section class="pane" id="pane-survey-profile">
   <span class="eyebrow">Inquérito online · 62 respostas</span>
   <h1 class="section-title">Quem<br><em>respondeu</em></h1>
-  <p class="section-desc">Caracterização demográfica e comportamental dos 62 respondentes. A maioria tem entre 18 e 24 anos, informa-se sobretudo por redes sociais, jornais e televisão, e raramente ou nunca consultou o parlamento.pt.</p>
+  <p class="section-desc">Perfil dos 62 respondentes. A maioria tem entre 18 e 24 anos, informa-se sobretudo por redes sociais, jornais e televisão, e raramente ou nunca consultou o parlamento.pt.</p>
 
   <div class="m-grid">
-    <div class="m-cell"><div class="m-n">62</div><div class="m-l">Total de respostas recolhidas</div><div class="m-bar"><div class="m-bar-fill" style="width:100%"></div></div></div>
+    <div class="m-cell"><div class="m-n">64</div><div class="m-l">Total de respostas recolhidas</div><div class="m-bar"><div class="m-bar-fill" style="width:100%"></div></div></div>
     <div class="m-cell"><div class="m-n">72<small>%</small></div><div class="m-l">Têm entre 18 e 24 anos</div><div class="m-bar"><div class="m-bar-fill" style="width:72%"></div></div></div>
     <div class="m-cell"><div class="m-n">4.3<small>/5</small></div><div class="m-l">Conforto médio com apps móveis</div><div class="m-bar"><div class="m-bar-fill" style="width:86%"></div></div></div>
     <div class="m-cell"><div class="m-n">68<small>%</small></div><div class="m-l">Nunca visitaram o parlamento.pt</div><div class="m-bar"><div class="m-bar-fill" style="width:68%"></div></div></div>
     <div class="m-cell"><div class="m-n">82<small>%</small></div><div class="m-l">Usariam a PoliTrack</div><div class="m-bar"><div class="m-bar-fill" style="width:82%"></div></div></div>
+  </div>
+
+    <div class="notice">
+    <div class="notice-title">Sinal de produto</div>
+    <p class="notice-body">Um respondente listou a PoliTrack como fonte habitual de informação sobre o parlamento, ao lado do Instagram, jornais e televisão. É o único respondente a fazê-lo. Indica que existe uma pequena mas real base de utilizadores actuais que já integrou a app no seu ecossistema de informação.</p>
   </div>
 
   <div class="highlight">
@@ -2679,7 +2986,7 @@ button, input { font-family: var(--fb); }
 <section class="pane" id="pane-survey-functions">
   <span class="eyebrow">Inquérito online · Prioridades de produto</span>
   <h1 class="section-title">O que mais<br><em>valorizam</em></h1>
-  <p class="section-desc">Leitura das funcionalidades consideradas mais importantes, cruzada com as necessidades e lacunas descritas espontaneamente nas respostas abertas.</p>
+  <p class="section-desc">As funcionalidades marcadas como mais importantes, cruzadas com as necessidades descritas espontaneamente nas respostas abertas.</p>
 
   <span class="eyebrow">Ranking de funcionalidades</span>
   <div class="block-title" style="margin-bottom:20px">As cinco mais importantes, por percentagem de quem marcou cada uma</div>
@@ -2752,8 +3059,28 @@ button, input { font-family: var(--fb); }
   <div class="irow">
     <div class="irow-sev"><span class="sev r">Crítico</span></div>
     <div class="irow-body">
-      <div class="irow-title">A conta obrigatória para guardar ou reagir é o bloqueio de conversão mais referido</div>
-      <p class="irow-desc">Mais de doze respondentes mencionaram este problema. Quem tentou guardar uma proposta foi confrontado com um pedido de registo, o que gerou frustração imediata e, muitas vezes, abandono da tarefa. A expectativa dominante era simples: guardar localmente, sem conta. Pelo menos duas respostas reportam ainda fricção técnica no próprio fluxo de autenticação.</p>
+  <div class="irow">
+    <div class="irow-sev"><span class="sev a">Alto</span></div>
+    <div class="irow-body">
+      <div class="irow-title">A imagem do partido no feed não é clicável para abrir a página do partido</div>
+      <p class="irow-desc">Um respondente do inquérito identificou um problema de affordance específico: ao tentar aceder à página de um partido, o primeiro gesto natural foi clicar na imagem do partido no cartão do feed. Não aconteceu nada. Só depois, por tentativa e erro, descobriu que tinha de ir ao ícone de partidos na barra de navegação e selecionar o partido de lá. A imagem do partido no cartão parece clicável — tem a forma e o contexto de um link — mas não tem ação associada. É um caso clássico de affordance falhada.</p>
+      <div class="irow-q">"A primeira coisa que fiz foi clicar na imagem de perfil do partido no feed e não acontece nada. Devia logo abrir. Mas como não deu, depois descobri que é ir ao ícone dos partidos e depois selecionar o que queremos."<span class="irow-who">25 a 34 anos · Inquérito online</span></div>
+      <div class="irow-action">→ A imagem do partido no cartão deve abrir a página do partido diretamente, sem intermediários</div>
+    </div>
+  </div>
+
+  <div class="irow">
+    <div class="irow-sev"><span class="sev a">Alto</span></div>
+    <div class="irow-body">
+      <div class="irow-title">O menu de três barras é esperado para filtrar por temas, não para filtrar por legislatura</div>
+      <p class="irow-desc">Este problema foi confirmado por todos os participantes presenciais e por vários respondentes do inquérito. Um respondente descreveu com detalhe o percurso: tentou todos os ícones da barra de navegação, depois abriu o menu de três barras esperando encontrar categorias ou temas, e encontrou apenas legislaturas. "Achei que este menu servisse para filtrar por temas e não por legislaturas." O gap entre expectativa e realidade é duplo: o filtro de temas que todos esperam não existe; o filtro que existe (legislaturas) está num lugar que ninguém procuraria para isso.</p>
+      <div class="irow-q">"Encontrei por acaso quando estava à procura de outras coisas. Mas achei que este menu servisse para filtrar por temas e não por legislaturas."<span class="irow-who">25 a 34 anos · Inquérito online</span></div>
+      <div class="irow-action">→ Filtro de legislatura deve ser rotulado e colocado como aba visível, não como menu de contexto; filtro de temas deve ser a funcionalidade principal de filtragem</div>
+    </div>
+  </div>
+
+        <div class="irow-title">A conta obrigatória para guardar ou reagir é o bloqueio de conversão mais referido</div>
+      <p class="irow-desc">Doze ou mais respondentes mencionaram este problema. Quem tentou guardar uma proposta recebeu um pedido de registo e, na maioria dos casos, desistiu da tarefa. A expectativa era simples: guardar localmente, sem conta. Pelo menos duas respostas reportam ainda fricção técnica no próprio fluxo de autenticação.</p>
       <div class="irow-q">"Deveria ter todas as funcionalidades sem necessidade de criar conta. Poderia gravar automaticamente os resultados por exemplo na iCloud se houver diferentes dispositivos da mesma pessoa."<span class="irow-who">35 a 49 anos</span></div>
       <div class="irow-q">"Não esperava que me pedisse para fazer login. Esperava que houvesse a opção de ter os registos em local, e que só fossem sincronizados quando criasse uma conta."<span class="irow-who">25 a 34 anos</span></div>
       <div class="irow-q">"O botão que está lá para iniciar sessão não reencaminha para iniciar sessão."<span class="irow-who">25 a 34 anos</span></div>
@@ -2875,6 +3202,28 @@ button, input { font-family: var(--fb); }
     <div class="alert-title">A origem dos dados ainda não está a ser comunicada com clareza suficiente</div>
     <p class="alert-body">Vários respondentes questionaram a fiabilidade da fonte. Isto é, ao mesmo tempo, um problema de comunicação e uma oportunidade estratégica: a PoliTrack agrega dados da API do parlamento.pt, sem intermediário editorial, sem carregamento manual pelos partidos e sem reescrita do conteúdo oficial. Esta vantagem ainda não está visível na interface. Um badge simples, uma linha de onboarding ou um elemento no header com "dados oficiais via API do parlamento.pt" resolveria a dúvida de origem e transformaria uma fraqueza percebida no argumento de confiança mais forte da app.</p>
   </div>
+
+  <div class="irow">
+    <div class="irow-sev"><span class="sev t">Técnico</span></div>
+    <div class="irow-body">
+      <div class="irow-title">A app não abre sem Google Play Services instalados</div>
+      <p class="irow-desc">Um respondente identificou que a app depende dos Google Play Services para funcionar e não abre de todo se estes não estiverem instalados. O problema afecta dispositivos sem GMS (incluindo alguns Android com serviços alternativos). A sugestão é clara: as funcionalidades principais devem funcionar sem GMS, ficando apenas as notificações dependentes desse serviço. É uma barreira de entrada invisível que elimina utilizadores antes de estes chegarem ao primeiro ecrã.</p>
+      <div class="irow-q">"A app não abre se não estiverem instalados no dispositivo. Se for apenas para notificações, poderia funcionar tudo o resto e ter um aviso que sem GMS não terá notificações."<span class="irow-who">25 a 34 anos · Inquérito online</span></div>
+      <div class="irow-action">→ Remover dependência de GMS das funcionalidades core; GMS apenas para notificações push. Nota separada: um respondente pediu explicitamente disponibilidade em Android</div>
+    </div>
+  </div>
+
+  <div class="irow">
+    <div class="irow-sev"><span class="sev t">Visual</span></div>
+    <div class="irow-body">
+      <div class="irow-title">Os cartões de proposta têm peso visual excessivo</div>
+      <p class="irow-desc">Vários respondentes mencionaram espontaneamente que os cartões parecem demasiado pesados visualmente, com bordas arredondadas pronunciadas e sombras que competem com o conteúdo. A sensação descrita é de "overwhelmed" — demasiados elementos a chamar atenção ao mesmo tempo. Um respondente sugeriu simplificar ou remover as bordas. Outro referiu que a diferença entre o fundo do ecrã e a cor do cartão é demasiado subtil, o que dificulta a distinção entre cards contíguos.</p>
+      <div class="irow-q">"A nível de design melhorava um pouco a página. Está muito overwhelmed com as bordas arredondadas de cada proposta."<span class="irow-who">25 a 34 anos · Inquérito online</span></div>
+      <div class="irow-q">"Os relevos nos cartões não têm margens. Parece que iria funcionar melhor sem eles."<span class="irow-who">35 a 49 anos · Inquérito online</span></div>
+      <div class="irow-action">→ Reduzir sombra e raio de curvatura dos cartões; aumentar contraste entre fundo e card</div>
+    </div>
+  </div>
+
 </section>
 
 <!-- ============================================================
@@ -2883,7 +3232,7 @@ button, input { font-family: var(--fb); }
 <section class="pane" id="pane-survey-tasks">
   <span class="eyebrow">Inquérito online · Testes de usabilidade</span>
   <h1 class="section-title">Resultados<br><em>das tarefas</em></h1>
-  <p class="section-desc">A parte opcional do inquérito pediu aos respondentes que testassem a app em quatro tarefas concretas. Cerca de 40 dos 62 respondentes completaram esta secção. Os dados abaixo referem-se apenas a quem testou a app diretamente.</p>
+  <p class="section-desc">A secção de testes práticos foi opcional. Cerca de 40 dos 62 respondentes completaram as quatro tarefas. Os dados abaixo referem-se exclusivamente a quem interagiu com a app.</p>
 
   <div class="m-grid" style="grid-template-columns:repeat(4,1fr)">
     <div class="m-cell"><div class="m-n">~40<small> /62</small></div><div class="m-l">Completaram a secção de testes</div><div class="m-bar"><div class="m-bar-fill" style="width:65%"></div></div></div>
@@ -2945,17 +3294,17 @@ button, input { font-family: var(--fb); }
      INQUÉRITO: FEATURES PEDIDAS
      ============================================================ -->
 <section class="pane" id="pane-survey-features">
-  <span class="eyebrow">Inquérito online · 62 respondentes</span>
+  <span class="eyebrow">Inquérito online · 64 respondentes</span>
   <h1 class="section-title">O que querem<br><em>e ainda não existe</em></h1>
-  <p class="section-desc">Pedidos espontâneos organizados por frequência e por tipo. Algumas features aparecem tantas vezes que deixam de funcionar como sugestões e passam a comportar-se como requisitos. Outras surgem poucas vezes, mas revelam necessidades que os dados quantitativos sozinhos não conseguem captar.</p>
+  <p class="section-desc">Pedidos organizados por frequência. Alguns aparecem tantas vezes que já não são sugestões — são requisitos. Outros surgem poucas vezes mas apontam para necessidades reais que os números não captam.</p>
 
   <span class="eyebrow">Por ordem de frequência</span>
 
   <div class="feat-row">
     <div class="feat-rank">1</div>
     <div class="feat-body">
-      <div class="feat-title">Resumo em pontos-chave de cada proposta</div>
-      <p class="feat-desc">A necessidade mais referenciada de toda a investigação. Os respondentes não querem começar pelo texto integral de uma proposta parlamentar. Querem uma síntese em três a cinco pontos: do que trata, quem propôs, o que muda e em que estado está. O texto integral continua disponível para quem quiser aprofundar.</p>
+      <div class="feat-title">Resumo estruturado de cada proposta</div>
+      <p class="feat-desc">A necessidade mais referida em toda a investigação. Os respondentes não querem começar pelo texto integral. Querem uma síntese do que trata a proposta, quem propôs, o que muda e em que estado está. O texto integral fica disponível para quem quiser aprofundar.</p>
       <div class="feat-freq">Mencionado por ~18 respondentes · Confirmado em todos os testes presenciais</div>
     </div>
   </div>
@@ -3080,6 +3429,66 @@ button, input { font-family: var(--fb); }
       <p class="gcell-body">Organizar guardados por partido, tema ou assunto apareceu tanto nas sessões presenciais como nas respostas abertas. É a consequência natural de permitir guardar sem conta: quando o arquivo pessoal cresce, a necessidade seguinte é classificá-lo.</p>
     </div>
   </div>
+
+  <div class="rule-sm"></div>
+  <span class="eyebrow">Da investigação qualitativa</span>
+  <div class="block-title">Pedidos que surgem poucas vezes mas revelam necessidades reais</div>
+
+  <div class="feat-row">
+    <div class="feat-rank">8</div>
+    <div class="feat-body">
+      <div class="feat-title">Calendário de sessões parlamentares e votações previstas</div>
+      <p class="feat-desc">Vários respondentes pediram a possibilidade de ver o que vai acontecer no parlamento, não apenas o que já aconteceu. Um calendário de sessões previstas, com as propostas agendadas para debate ou votação, mudaria o posicionamento da app de arquivo para ferramenta de acompanhamento em tempo real. A Participante 06 dos testes presenciais pediu acesso à contagem de votos em eleições à medida que saem — a mesma lógica de "acontece agora", aplicada ao momento eleitoral.</p>
+      <div class="feat-freq">Mencionado por 3 respondentes · Confirmado em testes presenciais (P06)</div>
+    </div>
+  </div>
+
+  <div class="feat-row">
+    <div class="feat-rank">9</div>
+    <div class="feat-body">
+      <div class="feat-title">Agrupar propostas por sessão parlamentar</div>
+      <p class="feat-desc">Em vez de um feed cronológico por proposta individual, alguns respondentes querem ver as propostas agrupadas pela sessão plenária em que foram discutidas. A lógica é a de quem acompanha o noticiário: "o que aconteceu no parlamento esta semana", não "quais as propostas aprovadas por ordem de data". Esta organização diferente não substitui o feed atual — seria uma vista alternativa.</p>
+      <div class="feat-freq">Mencionado por 2 respondentes · Pedido específico de agrupar por sessão parlamentar</div>
+    </div>
+  </div>
+
+  <div class="feat-row">
+    <div class="feat-rank">10</div>
+    <div class="feat-body">
+      <div class="feat-title">Indicador de alinhamento partidário com base nas posições do utilizador</div>
+      <p class="feat-desc">Partindo das posições tomadas nas propostas, a app poderia mostrar ao utilizador com que partido tem maior convergência de opiniões. Esta funcionalidade — semelhante a "quizzes" eleitorais existentes em períodos de campanha — foi sugerida em duas respostas do inquérito. Tem potencial de envolvimento mas implica desafios de responsabilidade editorial: os utilizadores precisam de entender que estão a avaliar propostas individuais, não programas completos.</p>
+      <div class="feat-freq">Mencionado por 2 respondentes · Relacionado com o sistema de like/dislike</div>
+    </div>
+  </div>
+
+  <div class="feat-row">
+    <div class="feat-rank">11</div>
+    <div class="feat-body">
+      <div class="feat-title">Avaliação de relevância social por utilizadores</div>
+      <p class="feat-desc">Uma proposta bem argumentada: os utilizadores poderiam avaliar numa escala de 0 a 10 o impacto potencial de cada proposta na vida dos portugueses, e a média dessas avaliações influenciaria a ordem de apresentação. A ideia reconhece que uma proposta de condecoração e uma proposta de política de habitação têm pesos diferentes para a maioria dos cidadãos, mesmo que ambas sejam votadas no mesmo plenário. O risco de manipulação é real mas o princípio é sólido.</p>
+      <div class="irow-q">"Para qualquer proposta todo o utilizador teria a possibilidade de fazer uma avaliação numa escala de 0 a 10 da importância potencial de uma proposta para a vida dos portugueses."<span class="irow-who">18 a 24 anos · Inquérito online</span></div>
+      <div class="feat-freq">Mencionado por 1 respondente · Proposta detalhada e bem fundamentada</div>
+    </div>
+  </div>
+
+  <div class="feat-row">
+    <div class="feat-row">
+    <div class="feat-rank">13</div>
+    <div class="feat-body">
+      <div class="feat-title">Tornar a app acessível a utilizadores com necessidades especiais</div>
+      <p class="feat-desc">Um respondente recomendou explicitamente que a app fosse acessível. A PoliTrack posiciona-se como uma ferramenta de literacia democrática para toda a população portuguesa — o que inclui utilizadores com baixa visão, dislexia, dificuldades motoras ou dispositivos mais antigos. A acessibilidade não é uma feature adicional: é uma condição de coerência com o propósito declarado da app. O problema de iconografia sem labels tem impacto desproporcionado em utilizadores com menor familiaridade digital, incluindo faixas etárias mais altas.</p>
+      <div class="feat-freq">Recomendação explícita de 1 respondente · Implicado em múltiplos testes com utilizadores 50+</div>
+    </div>
+  </div>
+
+  <div class="feat-rank">12</div>
+    <div class="feat-body">
+      <div class="feat-title">Participação cívica: iniciativas legislativas populares e contacto com deputados</div>
+      <p class="feat-desc">Um respondente com literacia política elevada pediu explicitamente uma dimensão participativa: poder submeter petições, questionar deputados sobre o sentido de voto e consultar as posições públicas dos partidos sobre propostas em discussão. Esta é uma extensão ambiciosa do escopo atual da app, mas revela que existe um segmento de utilizadores que não quer só observar — quer participar. A PoliTrack poderia funcionar como ponto de entrada para esse percurso.</p>
+      <div class="feat-freq">Mencionado por 1 respondente · Perfil de alta literacia política</div>
+    </div>
+  </div>
+
 </section>
 
 <!-- ============================================================
@@ -3088,7 +3497,12 @@ button, input { font-family: var(--fb); }
 <section class="pane" id="pane-survey-quotes">
   <span class="eyebrow">Inquérito online · Vozes dos utilizadores</span>
   <h1 class="section-title">Citações<br><em>selecionadas</em></h1>
-  <p class="section-desc">As respostas mais reveladoras, selecionadas por clareza, originalidade ou por mostrarem algo que os dados quantitativos, sozinhos, não conseguem captar.</p>
+  <p class="section-desc">Respostas selecionadas por serem claras, inesperadas ou por dizerem em poucas palavras o que os dados por si só não conseguem mostrar.</p>
+
+  <div class="q-feature">
+    <p class="q-feature-text">Fiquei instantaneamente fã mesmo antes de ver a implementação. Acho que a ideia é excelente, muito importante mesmo, e o formato rede social funciona bem para o efeito.</p>
+    <span class="q-feature-who">25 a 34 anos · Inquérito online</span>
+  </div>
 
   <span class="eyebrow">Sobre o conceito da app</span>
   <div class="q-grid">
@@ -3150,6 +3564,48 @@ button, input { font-family: var(--fb); }
     <div class="alert-title">A veracidade percebida depende de explicar melhor a origem dos dados</div>
     <p class="alert-body">Vários respondentes questionaram a fiabilidade da fonte. Isto é simultaneamente um problema de comunicação e uma oportunidade estratégica: a PoliTrack agrega dados da API do parlamento.pt, sem intermediário editorial, sem carregamento manual pelos partidos e sem reescrita do conteúdo oficial. Esta vantagem ainda não está a ser comunicada visualmente na app. Um badge, uma linha de onboarding ou um elemento no header com "dados oficiais via API do parlamento.pt" resolveria a dúvida de origem e transformaria uma fraqueza percebida num dos principais argumentos de confiança da app.</p>
   </div>
+
+  <div class="rule-sm"></div>
+  <span class="eyebrow">Sobre as limitações do formato</span>
+  <div class="q-grid">
+    <div class="q-cell">
+      <p class="q-text">"Apenas não compreendo o positivo e o negativo, dado que é uma app de caráter informativo, ter gostos pode enviesar a opinião de uma pessoa quanto à proposta."</p>
+      <div class="q-meta"><span>18 a 24 anos</span><span class="q-tag">Risco de viés</span></div>
+    </div>
+    <div class="q-cell">
+      <p class="q-text">"Não percebo muito bem para que serve os ícones de Visto e Cruz em baixo das propostas. Assumo que seja para marcar como agrada-me/identifico-me e não me agrada/não me identifico, de modo a que possa depois filtrar as pesquisas consoante essas opções."</p>
+      <div class="q-meta"><span>25 a 34 anos</span><span class="q-tag">Like/dislike sem contexto</span></div>
+    </div>
+    <div class="q-cell">
+      <p class="q-text">"Preferia que estivesse disponível em Android."</p>
+      <div class="q-meta"><span>35 a 49 anos</span><span class="q-tag">Disponibilidade de plataforma</span></div>
+    </div>
+    <div class="q-cell">
+      <p class="q-text">"O motor de busca não é o melhor."</p>
+      <div class="q-meta"><span>18 a 24 anos · Utilizador actual da app</span><span class="q-tag">Pesquisa</span></div>
+    </div>
+  </div>
+
+  <span class="eyebrow">Sobre a responsabilidade da informação</span>
+  <div class="q-grid">
+    <div class="q-cell">
+      <p class="q-text">"Qual a veracidade do que é aqui colocado? É colocado pelo próprio governo? Qual a probabilidade de nesta app se gerar fake news?"</p>
+      <div class="q-meta"><span>18 a 24 anos</span><span class="q-tag">Confiança na fonte</span></div>
+    </div>
+    <div class="q-cell">
+      <p class="q-text">"Esta tipo de informação costuma chegar-me através das redes sociais, jornais ou entre conversas, mas aqui é uma fonte fidedigna de informação."</p>
+      <div class="q-meta"><span>35 a 49 anos · Instalou a app</span><span class="q-tag">Credibilidade percebida</span></div>
+    </div>
+    <div class="q-cell">
+      <p class="q-text">"Acho que poderia haver uma forma de os utilizadores da aplicação avaliarem o impacto potencial de certas propostas na vida dos portugueses. Nem todas as propostas têm o mesmo valor para a sociedade."</p>
+      <div class="q-meta"><span>18 a 24 anos</span><span class="q-tag">Relevância das propostas</span></div>
+    </div>
+    <div class="q-cell">
+      <p class="q-text">"Acho que seria interessante a tal parte de interagir com outros perfis, sendo que não é necessário um debate como acontece noutras plataformas e em que fica tóxico. Apenas permitir ver o posicionamento das pessoas que me interessa seguir."</p>
+      <div class="q-meta"><span>18 a 24 anos</span><span class="q-tag">Rede social sem debate</span></div>
+    </div>
+  </div>
+
 </section>
 </main>
 
