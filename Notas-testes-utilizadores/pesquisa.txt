@@ -1,0 +1,9 @@
+Problema - Tese do Tiago
+A pesquisa filtra por títulos formais de propostas parlamentares. As pessoas pesquisam por palavras que usam no dia a dia: "propinas", "lei trans", "habitação". A maioria dos testes presenciais ficou parada aqui. Bug confirmado: "propina" (singular) não devolve resultados, "propinas" (plural) devolve. Adicionalmente, a lupa desaparece quando se entra dentro de certas secções — um respondente do inquérito mencionou explicitamente que "o botão de pesquisa desaparece depois de filtrar".
+
+O que funciona bem:
+Quando a pessoa sabe o vocabulário parlamentar ou o nome exacto da proposta, a pesquisa funciona e é rápida. O Participante 05 reformulou conscientemente "trans" para "mudança de nome" e encontrou o resultado correto.
+
+O que os respondentes têm pedido de features para a pesquisa:
+Indexação por sinónimos, temas e linguagem jornalística. Pesquisa dentro de cada partido. Normalização singular/plural. Barra de pesquisa acessível em todos os ecrãs.
+

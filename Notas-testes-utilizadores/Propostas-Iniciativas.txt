@@ -1,0 +1,14 @@
+Problemas centrais:
+O texto integral é a única alternativa ao título. Não há nível intermédio. Quando a proposta é uma "alteração" a um diploma existente, o título não diz o que está a ser alterado — "base de alteração do clima" não diz nada a quem não conhece o diploma base. O like/dislike foi questionado em todas as sessões e em várias respostas do inquérito, com interpretações opostas: uns leram como posição sobre a proposta, outros como posição sobre o resultado. Os votos dos partidos ficam ocultos por expansão em vez de visíveis no cartão.
+-> Criar também o fluxo para acompanhar as várias fases de uma proposta.
+
+aprovação e desaprovação do utilizador:
+-> Foi levantada a questão de quando clicamos por exemplo em "aprovar" nesse feature, estamos a concordar o tema e texto da proposta ou com o resultado da votação final dela?
+-> Esta ambiguidade do sentido de votação do utilizador, cria incompatibilidade com uma outra ideia propostas pelos respondentes: a ideia de analisar com que partido nos estamos a identificar mais pelas nossas votações.
+-> Houveram muitos respondentes que acharam este feature inútil a nível de utilização e diferença. No entanto acham interessante ter acesso a essas propostas e temáticas dentro da própria página para análise própria.
+-> Por causa disto, acho melhor a nível de fluxo, estas interações com as propostas serem incluídas numa camada secundária de interação e só serem mostradas quando o utilizador clica em ver mais.
+-> Queria pôr uma lista aqui dos vários nomes que as pessoas dão a esta feature.
+
+O que funciona:
+O resultado global (aprovado/rejeitado) é imediatamente visível. A identificação do partido proponente, a data e o tipo de proposta são claros. O botão "ler na íntegra" é compreendido quando o utilizador o encontra.
+-> Funciona muito bem, mas apenas um pequeno detalhe: Alguns respondentes, no testes práticos, que nunca tinham estado em contacto com a aplicação, nem a sua ideia. Ao entrar pela primeira vez (que abre na Home Page), não percebiam diretamente que ordem er

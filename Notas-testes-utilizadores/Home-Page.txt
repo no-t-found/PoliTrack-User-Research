@@ -1,0 +1,23 @@
+Design:
+Duas das três imagens do inquérito têm o mesmo fundo e cor, o que torna difícil perceber intuitivamente que representam ecrãs distintos da app. Um respondente identificou: "percebo que a informação é diferente, mas não sei ao certo que tipo de janela é essa, porque não consigo ver ligação aos ícones de baixo." O feed cronológico é consensualmente aceite como a organização correta, mas as propostas são visualmente similares entre si, tornando difícil distinguir o que já foi lido.
+-> mudança visual leve no conteúdo visual já lido
+-> aproveitar a "2.ª camada - a camada de fundo" ser o ponto central para perceber a mudança de páginas. | aproveitar para aplicar mudanças de cor.
+-> sobre a temática de mais distinção visual nos paineis. -> também entra q esutão de tornar a localização mais intuitiva pela barra de navegacao inferior.
+
+Nota: fazer um tópico separado para a distinção visual do paineis.
+Neste tópico deixar espaço para mostrar imagens comparativas. 
+Falar sobre a mudança do background e um improve na barra de navegação inferior, para perceber melhor em que pagina nos encontramos.
+
+Ordem do feed:
+-> Mais convencional e default sempre cronológica, mostrar sempre as propostas mais recentes primeiro
+-> Detalhe: Criar uma distinção, nas últimas propostas vistas pelo utilizador para as mais recentes.
+
+O que funciona:
+A ordem cronológica é percebida como correta por todos os participantes. O estado de aprovação ou rejeição é imediatamente visível no cartão. A identificação do partido proponente é clara e foi o elemento mais elogiado espontaneamente no inquérito.
+
+Pedido de feature:
+Filtros de tema no feed (sem substituir cronologia). Tag de tema visível em cada cartão antes de expandir. Indicador subtil de propostas já vistas. Distinção visual mais clara entre ecrãs distintos da app.
+-> Problematica: Pode ser am A/B testing resolvida -> criar as duas versões.
+-> Definição e contexto da problemática: estas opções de pesquisa por temáticas pode estar implementada no Feed, ou no Painel Abertura da pesquisa.
+-> No entanto este é dos features mais pedido pelos respondentes. Tanto que é que cada proposta vai apresentar o tema intregado nela. é suposto também a "tag" do tema ser clicável e reencaminhar para um novo painel full page, com back button (sem navegação inferior? talvez) em que abre um painel com as propostas dessa temática, mas poder pesquisar encima também.
+
